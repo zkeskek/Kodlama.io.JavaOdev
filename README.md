@@ -1,1 +1,2 @@
 # JavaOdev
+yazılıma hazırım
