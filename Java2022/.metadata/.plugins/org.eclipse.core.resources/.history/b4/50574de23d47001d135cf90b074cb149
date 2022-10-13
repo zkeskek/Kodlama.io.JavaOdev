@@ -1,0 +1,30 @@
+package oopWithNLayeredApp.business;
+
+import java.util.ListIterator;
+
+import oopWithNLayeredApp.core.logging.Logger;
+import oopWithNLayeredApp.dataAccess.JdbcProductDao;
+import oopWithNLayeredApp.dataAccess.ProductDao;
+import oopWithNLayeredApp.entities.Product;
+
+public class ProductManager {
+	private ProductDao productDao;
+
+	private ListIterator<Logger> Loggers;
+
+	public ProductManager(ProductDao productDao, Logger[] Loggers) {
+
+		this.productDao = productDao;
+		this.loggers=loggers;
+	}
+
+	public void add(Product product) throws Exception {
+		// İş kuraları yazılacak
+		if (product.getUnitPrice() < 10) {
+			throw new Exception("Ürün fiyat 10 dan aşağı olamaz");
+		}
+		// ProductDao productDao= new ProductDao();
+		productDao.add(product);
+
+	}
+}
