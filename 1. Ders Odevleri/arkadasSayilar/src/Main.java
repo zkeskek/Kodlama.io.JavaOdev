@@ -3,8 +3,8 @@
 public class Main {
 
 	public static void main(String[] args) {
-		int sayi1 = 221;
-		int sayi2 = 284;
+		int sayi1 = 234;
+		int sayi2 = 285;
 		int toplam1 = 0;
 		int toplam2 = 0;
 
