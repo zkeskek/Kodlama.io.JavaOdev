@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Patika.dev/Odevler",
+			"Patika.dev/Hello",
+			"Patika.dev"
+		]
+	}
+}
